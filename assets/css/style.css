@@ -489,6 +489,9 @@
   .bg-\[var\(--color-primary\)\] {
     background-color: var(--color-primary);
   }
+  .bg-accent {
+    background-color: var(--color-accent);
+  }
   .bg-green-900 {
     background-color: var(--color-green-900);
   }
@@ -497,9 +500,6 @@
   }
   .bg-yellow-100 {
     background-color: var(--color-yellow-100);
-  }
-  .bg-yellow-500 {
-    background-color: var(--color-yellow-500);
   }
   .bg-\[url\(\'\/assets\/img\/bg\.jpg\'\)\] {
     background-image: url('/assets/img/bg.jpg');
@@ -876,12 +876,6 @@
     @media (width >= 64rem) {
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
-    }
-  }
-  .lg\:text-xl {
-    @media (width >= 64rem) {
-      font-size: var(--text-xl);
-      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
   .xl\:w-2\/3 {
