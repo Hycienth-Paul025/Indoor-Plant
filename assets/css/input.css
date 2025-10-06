@@ -16,23 +16,6 @@ html {
   /* This creates a 'font-custom-sans' utility class */
   --font-google: 'Montserrat', sans-serif;
 
-  /* 
-
-
-
-H1 : PLayfair display, bold (700 ) 48px/36px  forest green
-
-H2: playfair display, bold (700) 36px / 28px  forest green
-
-h3 : playfair display ,bold (700 ) 24px /20px  Dark Charcoal
-
-body-text : Montserrat , regular (400) 16px/15px  Dark Charcoal
-
-Buttons & Links : Montserrat regular(400) 16px/16px
-
-Labels/ captions Montserrat regular (400) 14px/13px Dark Charcoal
-
-   */
 }
 
 /* Colors  */
