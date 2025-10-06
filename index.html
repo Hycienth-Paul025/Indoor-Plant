@@ -26,7 +26,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
 
-    <title>Plant Website || TailwindCSS</title>
+    <title>IndoorPlant || plant selling Website</title>
   </head>
 
   <body
@@ -51,7 +51,7 @@
 
         <div
           id="nav-menu"
-          class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-2950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto"
+          class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-[var(--color-primary)] flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto clay-up"
         >
           <ul
             class="flex flex-col items-center gap-8 lg:flex-row text-[--color-text]"
@@ -106,13 +106,15 @@
         <div class="container p-3 md:p-8 lg:p-10 sm:p-6">
           <!-- Content -->
 
-          <div class="home-data w-full space-y-5 md:w-[70%] lg:w-1/2">
+          <div
+            class="home-data w-full h-full bg-white/60 py-5 md:py-0 md:bg-transparent space-y-5 md:w-[70%] lg:w-1/2"
+          >
             <h1 class="text-[var(--color-heading)]">
               <span class="text-green-500">Nature's </span> touch that <br />
               <span class="text-green-500">Elevates </span> your everyday
             </h1>
 
-            <p class="text-[var(--color-text)] font-medium">
+            <p class="text-[var(--color-text)] text-[15px] font-medium">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Architecto ullam nostrum reprehenderit alias officia incidunt
               itaque.
@@ -130,7 +132,9 @@
               </button>
             </div>
 
-            <p class="text-lg font-medium">You will get 30-days free trial.</p>
+            <p class="text-[15px] font-medium">
+              You will get 30-days free trial.
+            </p>
           </div>
         </div>
       </section>
@@ -225,7 +229,7 @@
           class="about-heading flex flex-col items-center gap-3 text-center mb-10 md:mb-20"
         >
           <h2 class="title">About us</h2>
-          <p class="max-w-2xl">
+          <p class="max-w-2xl px-3 md:px-0">
             Fresh air, calm vibes, and timeless greenery for your space.
           </p>
         </div>
@@ -304,7 +308,7 @@
       <!--~~~~~~~~~~~~~~~ Popular ~~~~~~~~~~~~~~~-->
       <section id="popular">
         <div
-          class="popular-heading flex flex-col items-center gap-3 text-center mb-40 md:mb-20"
+          class="popular-heading flex flex-col items-center gap-3 text-center mb-15 md:mb-20"
         >
           <h2 class="title">Your Plant Choice</h2>
 
@@ -459,7 +463,7 @@
         </div>
 
         <div
-          class="review-heading flex flex-col items-center gap-3 text-center mb-40 md:mb-20"
+          class="review-heading flex flex-col items-center gap-3 text-center mb-10 md:mb-20"
         >
           <h2 class="title">Customer Review</h2>
 
@@ -656,7 +660,7 @@
         <!-- iiten 1 -->
         <div>
           <div
-            class="flex items-center gap-x-1.5 text-7xl text-[var(--color-heading)]"
+            class="flex items-center justify-center mb-4 lg:mb-0 md:justify-start gap-x-1.5 text-7xl text-[var(--color-heading)]"
           >
             <p class="font-display text-xl sm:text-2xl">Indoorplant</p>
             <i class="ri-leaf-fill text-xl sm:text-2xl lg:text-3xl"></i>

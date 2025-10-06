@@ -151,3 +151,11 @@ h3 {
   opacity: 1;
 }
 
+
+
+@theme{
+  --clay-up{
+background: red;
+  }
+}
+

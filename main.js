@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('left-[0]');
-    hamburger.classList.toggle('ri-close-large-line');
+    hamburger.classList.toggle('ri-close-large-fill');
   });
 
   navLinks.forEach((link) => {
