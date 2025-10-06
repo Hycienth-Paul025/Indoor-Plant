@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import 'tailwindcss';
+
+html {
+  @apply scroll-smooth overflow-x-hidden;
+}
+
+/* p-3 md:p-8 lg:p-10 sm:p-6 */
+
+/* Font-Family */
+@theme {
+  /* This creates a 'font-lobster' utility class */
+  --font-display: 'PLayfair Display', serif;
+
+  /* This creates a 'font-custom-sans' utility class */
+  --font-google: 'Montserrat', sans-serif;
+
+  /* 
+
+
+
+H1 : PLayfair display, bold (700 ) 48px/36px  forest green
+
+H2: playfair display, bold (700) 36px / 28px  forest green
+
+h3 : playfair display ,bold (700 ) 24px /20px  Dark Charcoal
+
+body-text : Montserrat , regular (400) 16px/15px  Dark Charcoal
+
+Buttons & Links : Montserrat regular(400) 16px/16px
+
+Labels/ captions Montserrat regular (400) 14px/13px Dark Charcoal
+
+   */
+}
+
+/* Colors  */
+
+@theme {
+  --color-primary: #fcfaf8;
+
+  /* forest Green */
+  --color-heading: #1e4620;
+
+  /* Dark Charcoal */
+  --color-text: #2d3a3a;
+
+  --color-gray: #e8eae3; /* For Section */
+
+  --color-accent: #c87a58; /* for CTA buttons */
+}
+
+/* Animate */
+
+@theme {
+  /* * Custom animation definition using @theme in Tailwind CSS v4.
+   * This generates the 'animate-moving-y' utility class.
+   */
+  --animate-moving-y: move 3s linear infinite;
+
+  /* * Define the 'move' keyframes using the @keyframes directive.
+   */
+  @keyframes move {
+    50% {
+      transform: translateY(-1rem);
+    }
+  }
+
+  --animate-rotating: rotate 15s linear infinite;
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  --animate-scaleup: scale 3s linear infinite;
+
+  @keyframes scale {
+    0% {
+      transform: scale(0.8);
+    }
+
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(0.7);
+    }
+  }
+}
+
+
+.nav-link {
+  @apply text-lg font-semibold duration-300;
+}
+
+.nav-link:hover {
+  @apply text-accent;
+}
+
+section {
+  @apply py-20 md:py-28 bg-[var(--color-gray)];
+}
+
+h1 {
+  @apply text-3xl  md:text-4xl xl:text-5xl font-bold;
+}
+
+h2 {
+  @apply text-xl md:text-2xl xl:text-3xl font-bold;
+}
+
+h3 {
+  @apply text-2xl md:text-3xl xl:text-4xl font-bold;
+}
+
+/* active */
+
+.active {
+  @apply text-accent font-extrabold ;
+}
+
+/* title */
+
+.title {
+  @apply font-display text-[var(--color-heading)]  font-bold;
+}
+
+
+/* Button */
+
+.btn {
+  @apply border border-[var(--color-accent)] bg-[var(--color-accent)]  rounded-md px-5 py-2 duration-300 cursor-pointer;
+}
+
+.btn span {
+  @apply font-bold;
+}
+
+.btn:hover {
+  @apply opacity-90;
+}
+
+.btn-outline {
+  @apply bg-transparent;
+}
+
+.btn-outline:hover {
+  @apply bg-[var(--color-accent)] text-white;
+}
+
+.popular-card:hover img {
+  @apply -top-8;
+}
+
+.swiper .swiper-pagination-bullet {
+  @apply bg-green-500 w-3 h-3;
+  opacity: 0.5;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  @apply bg-green-500 w-3 h-3;
+  opacity: 1;
+}
+
