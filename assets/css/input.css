@@ -14,7 +14,7 @@ html {
   --font-display: 'PLayfair Display', serif;
 
   /* This creates a 'font-custom-sans' utility class */
-  --font-google: 'Montserrat', sans-serif;
+  --font-Mont: 'Montserrat', sans-serif;
 
 }
 
