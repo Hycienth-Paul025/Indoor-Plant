@@ -137,7 +137,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /// Google Analytics Tracking FUnction
-
-  window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-2ZTX1E1N36');
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const gtm = document.createElement('script');
+    gtm.src = 'https://www.googletagmanager.com/gtag/js?id=G-2ZTX1E1N36';
+    gtm.defer = true;
+    document.head.appendChild(gtm);
+  }, 3000); // delay by 3s after page load
+});
 
 });
