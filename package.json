@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/package",
   "name": "tailwind-plant-website",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.js", 
   "scripts": {
     "watch": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --w",
     "prettier": "npx prettier --write **/*.html "
