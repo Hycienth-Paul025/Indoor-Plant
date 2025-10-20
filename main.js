@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
+            pauseOnMouseEnter: true,
     },
     // If we need pagination
     pagination: {
@@ -133,6 +134,10 @@ document.addEventListener('DOMContentLoaded', () => {
   /// REVIEW
   sr.reveal('.review-leaf, .footer-floral', { delay: 1000, origin: 'left' });
 
-  ///
+
+
+  /// Google Analytics Tracking FUnction
+
+  window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-2ZTX1E1N36');
 
 });
