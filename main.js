@@ -116,9 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
    // reset: true,
   });
 
-  sr.reveal('.home-data, .about-heading, .popular-heading, .review-heading, .review-swiper, .footer-icon, .footer-content, .copyright');
+  sr.reveal(' .about-heading, .popular-heading, .review-heading, .review-swiper, .footer-icon, .footer-content, .copyright');
 
-  sr.reveal('.home-image', { delay: 500, scale: 0.5 });
 
   //SERVICE 
   sr.reveal('.service-card, .popular-card', { interval: 100 });
